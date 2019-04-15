@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/track_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/track_title_textView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/track_title_hint" />
+
+    <TextView
+        android:id="@+id/track_artist_textView"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/artist_hint" />
+
+    <TextView
+        android:id="@+id/album_textView"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/track_title_textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/album_textView" />
+
+    <TextView
+        android:id="@+id/track_date_textView"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/track_artist_textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="221dp"
+        android:layout_marginTop="9dp"
+        android:text="@string/date_hint" />
+</RelativeLayout>

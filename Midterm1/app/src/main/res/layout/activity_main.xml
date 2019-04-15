@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editTextSearch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/search_bar_editText"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="17dp"
+        android:ems="10"
+        android:hint="@string/search_hint"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/limit_display_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_bar_editText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/limit_hint"
+        android:textSize="18sp" />
+
+    <SeekBar
+        android:id="@+id/limit_seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_bar_editText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="18dp"
+        android:layout_toEndOf="@+id/limit_display_textView"
+        android:max="25"
+        android:min="5"
+        android:progress="5" />
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/limit_seekBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/search_button_text" />
+
+    <TextView
+        android:id="@+id/sort_by_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="29dp"
+        android:text="@string/sort_by_hint"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="180dp"
+        android:checkedButton="@+id/radioButtonTrackRating">
+
+        <RadioButton
+            android:id="@+id/radioButtonTrackRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radioButtonTrackRating" />
+
+        <RadioButton
+            android:id="@+id/radioButtonArtistRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/radioButtonArtistRating" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/results_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="173dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="79dp"
+        android:text="@string/results_hint"
+        android:textSize="18sp" />
+
+    <ListView
+        android:id="@+id/results_listView"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/results_textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="12dp" >
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/results_textView"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="12dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

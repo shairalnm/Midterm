@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Midterm</string>
+    <string name="editTextSearch">Song</string>
+    <string name="search_hint">Song</string>
+    <string name="limit_hint">Limit: 5</string>
+    <string name="search_button_text">Search</string>
+    <string name="sort_by_hint">Sort by:</string>
+    <string name="radioButtonTrackRating">Track Rating</string>
+    <string name="radioButtonArtistRating">Artist Rating</string>
+    <string name="results_hint">Search results</string>
+    <string name="track_title_hint">Track: TrackName</string>
+    <string name="artist_hint">Artist: Name</string>
+    <string name="date_hint">Date: MM-DD-YYYY</string>
+    <string name="album_textView">Album: AlbumName</string>
+
+</resources>
